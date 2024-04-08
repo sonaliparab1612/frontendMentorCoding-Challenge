@@ -1,0 +1,79 @@
+@import url(./Color.css);
+
+body {
+  overflow-y: hidden;
+  background-color: var(--OffBlack);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.card {
+  background-color: var(--DarkGrey);
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 20%;
+}
+.profile-name {
+  color: var(--White);
+  font-size: 25px;
+  margin: 5px 0 0 0;
+}
+.addr {
+  color: var(--Primary);
+  font-size: 12px;
+  margin-top: 3px;
+}
+.info {
+  color: var(--White);
+  font-size: 12px;
+  margin-top: 1rem;
+}
+.links {
+  width: 100%;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 !important;
+  margin: 10px 0 0 !important;
+}
+.links li {
+  list-style: none;
+  color: var(--White);
+  font-size: 12px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--Grey);
+  width: 80%;
+  text-align: center;
+  margin: 0px 0 10px 0px;
+}
+.links li:hover {
+  background-color: var(--Primary);
+  color: var(--OffBlack);
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 80%;
+  }
+}
